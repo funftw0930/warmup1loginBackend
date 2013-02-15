@@ -1,7 +1,7 @@
 # Create your views here.
 from django.http import HttpResponse
 from models import Users
-import simplejson as json
+import json
 from django.views.decorators.csrf import csrf_exempt
 
 
