@@ -34,11 +34,16 @@
 
 <script type="text/javascript">
 <!--
+/* Put the page into a blank state until everything finishes loading
+   This is not the ideal thing to do, but better than nothing. */
 $('#login-page').hide()
+/*$('#welcome-page').hide()*/
 $('#login-username').val("")
 $('#login-password').val("")
 $('#login-message').html("Please enter your credentials below")
+$('#welcome-message').html("You should never see this text");
 
+/* setup the page so that only one of the forms is shown */
 $(document).ready(function() {
    show_login_page();
  });
