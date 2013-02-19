@@ -18,7 +18,7 @@ ERR_BAD_USERNAME = (-3);
 ERR_BAD_PASSWORD = (-4);
 
 
-function get_message_for_errcode(code) {
+function err_msg(code) {
     if( code == ERR_BAD_CREDENTIALS) {
         return ("Invalid username and password combination. Please try again. ");
     } else if( code == ERR_BAD_USERNAME) {
