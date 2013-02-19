@@ -3,7 +3,12 @@ from django.http import HttpResponse
 from models import Users
 import json
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render
+import os
 
+@csrf_exempt
+def initpage(request):
+    return render(request, 'client.html')
 
 @csrf_exempt
 def login(request):
