@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     url(r'^TESTAPI/resetFixture$', resetFixture),
     url(r'^TESTAPI/unitTests$', testUnit),
     url(r'^$', initpage),
-    url(r'^(?P<path>.*css)$', 'django.views.static.serve', {'document_root': os.path.abspath('/home/az/cs169/warmupsite/warmupsite/templates')}),
-    url(r'^(?P<path>.*js)$', 'django.views.static.serve', {'document_root': os.path.abspath('/home/az/cs169/warmupsite/warmupsite/templates')}),
+    url(r'^(?P<path>.*css)$', 'django.views.static.serve', {'document_root': os.path.join(os.path.abspath(os.path.curdir),'templates')}),
+    url(r'^(?P<path>.*js)$', 'django.views.static.serve', {'document_root': os.path.join(os.path.abspath(os.path.curdir),'templates')}),
 
 )
